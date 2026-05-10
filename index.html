@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT Reloaded Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<input type="checkbox" id="theme-lock">
+<input type="checkbox" id="sidebar-lock">
+
+<div class="app-layout">
+  <aside class="side-nav">
+    <div class="brand-zone">
+      <div class="cat-logo">C</div>
+      <span class="nav-text">CAT Reloaded</span>
+    </div>
+
+    <label for="sidebar-lock" class="toggle-btn">
+      <i class="fas fa-chevron-left"></i>
+    </label>
+
+    <nav class="nav-links">
+      <a href="#" class="active"><i class="fas fa-home"></i> <span class="nav-text">Dashboard</span></a>
+      <a href="#"><i class="fas fa-users"></i> <span class="nav-text">Users</span></a>
+      <a href="#"><i class="fas fa-file-signature"></i> <span class="nav-text">Reports</span></a>
+      <a href="#"><i class="fas fa-star"></i> <span class="nav-text">Favorite</span></a>
+      <a href="#"><i class="fas fa-cog"></i> <span class="nav-text">Settings</span></a>
+
+      <label for="theme-lock" class="mode-switch">
+        <i class="fas fa-moon"></i> <span class="nav-text">Dark Mode</span>
+      </label>
+    </nav>
+
+    <div class="nav-bottom">
+      <button class="exit-action">log out</button>
+      <div class="user-profile">
+        <div class="avatar-box">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="user-info nav-text">
+          <p>Admin User</p>
+          <span>admin@cat.com</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-stage">
+    <header class="top-bar">
+      <div class="search-wrap">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search data...">
+      </div>
+    </header>
+
+    <section class="dashboard-body">
+      <div class="metrics-grid">
+        <div class="metric-box b-1">
+          <i class="fas fa-users"></i>
+          <div class="m-data">
+            <p>Users</p><span>150</span>
+          </div>
+        </div>
+        <div class="metric-box b-2">
+          <i class="fas fa-bolt"></i>
+          <div class="m-data">
+            <p>Sessions</p><span>55</span>
+          </div>
+        </div>
+        <div class="metric-box b-3">
+          <i class="fas fa-comments"></i>
+          <div class="m-data">
+            <p>Feedback</p><span>120</span>
+          </div>
+        </div>
+        <div class="metric-box b-4">
+          <i class="fas fa-hand-paper"></i>
+          <div class="m-data">
+            <p>Complaints</p><span>8</span>
+          </div>
+        </div>
+        <div class="metric-box b-5">
+          <i class="fas fa-bug"></i>
+          <div class="m-data">
+            <p>Errors</p><span>15</span>
+          </div>
+        </div>
+        <div class="metric-box b-6">
+          <i class="fas fa-chair"></i>
+          <div class="m-data">
+            <p>Available</p><span>45</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-row">
+        <div class="list-section">
+          <h3 class="section-title"><i class="fas fa-book-open"></i> Core Courses</h3>
+          <div class="entry-list">
+            <div class="item">Programming 1</div>
+            <div class="item">Programming 2 (OOP)</div>
+            <div class="item">Programming 3 (DSA)</div>
+            <div class="item">Database Systems</div>
+            <div class="item">Networking Fundamentals</div>
+            <div class="item">System Analysis and Design</div>
+            <div class="item">Operating Systems</div>
+            <div class="item">Software Engineering</div>
+          </div>
+        </div>
+
+        <div class="list-section">
+          <h3 class="section-title"><i class="fas fa-code-branch"></i> Backend Tracks</h3>
+          <div class="entry-list">
+            <div class="item track-card">Node.js</div>
+            <div class="item track-card">.NET</div>
+            <div class="item track-card">Laravel</div>
+            <div class="item track-card">Spring Boot</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>
